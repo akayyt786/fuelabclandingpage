@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    /* Adjust for fixed navbar */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 40s linear infinite;
+}
+
+.hover\:pause:hover {
+    animation-play-state: paused;
+}
+
+.mask-gradient {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* Custom styles can be added here */
